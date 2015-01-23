@@ -10,8 +10,8 @@ weekly_params = {'type' : 'weekly', 'cnt' : 4, 'arch_dir': 'weekly'}
 monthly_params = {'type' : 'monthly', 'cnt' : 12, 'arch_dir': 'monthly'}
 yearly_params = {'type' : 'yearly', 'cnt' : 5, 'arch_dir': 'yearly'}
 #
-archive_path = ''
-log_path = ''
+archive_path = os.getcwd()
+log_path = os.getcwd()
 #
 rotate_steps = []
 #
@@ -128,7 +128,6 @@ def main():
 		rotate_steps.append(monthly_params)
 		
 	if yearly_params['cnt'] > 0:
-		print yearly_params['cnt']
 		rotate_steps.append(yearly_params)
 	
 	#проверим соответствие заданного каталога требуемой структуре
@@ -149,7 +148,6 @@ def main():
 		
 	#начинаем ротацию архива
 	next_step_index = 1
-	print rotate_steps
 	for cur_step in rotate_steps:
 		archive_files = get_file_list(cur_step, archive_path)
 		archive_dates = sorted(archive_files)

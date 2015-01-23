@@ -4,7 +4,7 @@
 
 ##Использование
 
-Для работы скрипта требуется [Python 2.7](http://pyton.org), [python-dateutil](https://pypi.python.org/pypi/python-dateutil)
+Для работы скрипта требуется [Python 2.7](http://python.org), [python-dateutil](https://pypi.python.org/pypi/python-dateutil)
 
 Если вы хотите создать выполняемый файл для Windows вам потребуется установиить python-dateutil командой:
 

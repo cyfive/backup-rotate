@@ -140,7 +140,7 @@ def main():
 			try :
 				dir_list.index(cur_step['arch_dir'])
 			except ValueError:
-				has_errors = True	
+				has_errors = True
 					
 	if has_errors :
 		print_help()

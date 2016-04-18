@@ -1,10 +1,14 @@
 #!/env python
 # -*- coding: utf-8 -*-
 
-import os, stat, datetime, time, shutil
+import os, stat, datetime, time, shutil, sys
 from dateutil import relativedelta as rd
 
-archive_path = 'd:\\tmp\\backup\\dayly'
+if len(sys.argv) > 1:
+	archive_path = sys.argv[1];
+
+if not os.path.exists(archive_path):
+	exit(1)
 
 file_date = datetime.datetime(2010, 1, 1)
 

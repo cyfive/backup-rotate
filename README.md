@@ -18,3 +18,10 @@ easy_install --always-unzip python-dateutil
 python setup.py py2exe
 ```
 в папке *dist* будут сгенерированы файлы, которые можно использовать без установки python
+
+##Поддерживаемые платформы
+Скрипт протестирован:
+Windows 7 sp1
+Windows 2008 server
+
+Fedora 23

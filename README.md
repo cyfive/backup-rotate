@@ -21,7 +21,9 @@ python setup.py py2exe
 
 ##Поддерживаемые платформы
 Скрипт протестирован:
+
 Windows 7 sp1
+
 Windows 2008 server
 
 Fedora 23
